@@ -19,7 +19,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[62%_center] opacity-90 sm:object-[64%_center]"
+        className="object-contain object-center opacity-90 bg-ink"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/15" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/20" />
