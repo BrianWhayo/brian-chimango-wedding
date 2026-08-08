@@ -14,7 +14,7 @@ export default function Hero() {
       className="relative flex min-h-[100svh] items-center overflow-hidden bg-ink"
     >
       <Image
-        src="/images/couple-doorway-full.jpg"
+        src="/images/couple-hero-new.png"
         alt="Brian and Chimango dressed elegantly in black, arriving together at a doorway"
         fill
         priority

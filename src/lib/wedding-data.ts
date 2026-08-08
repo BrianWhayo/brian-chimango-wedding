@@ -98,8 +98,8 @@ export type RsvpContact = {
 };
 
 export const rsvpContacts: RsvpContact[] = [
-  { name: "Deborah Nakhumwa", phone: "+265990343566" },
-  { name: "Charles Reengo Whayo", phone: "+265 999 95 84 35" },
+  { name: "Reengo Whayo", phone: "+265 999 95 84 35"},
+  { name: "Deborah Nakhumwa", phone: "+265 990 343 566"},
 ];
 
 export type OutfitInspoItem = {
