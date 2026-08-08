@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-center overflow-hidden bg-ink"
+      className="relative flex min-h-[100svh] items-end justify-center overflow-hidden bg-ink"
     >
       <Image
         src="/images/couple-hero-new.png"
@@ -24,12 +24,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/15" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/20" />
 
-      <div className="relative z-10 mr-auto flex w-full max-w-2xl flex-col gap-5 px-6 pb-16 pt-28 sm:gap-6 sm:px-10 sm:pb-24 sm:pt-32 md:pl-14 lg:pl-20 xl:pl-24">
+      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-3xl flex-col items-center gap-4 px-6 pb-10 pt-32 text-center sm:gap-5 sm:px-10 sm:pb-12 md:pb-14">
         <p className="animate-fade-in text-xs uppercase tracking-[0.45em] text-mint">
           Together Before God
         </p>
 
-        <h1 className="animate-fade-up font-serif text-5xl leading-[0.95] text-ivory text-balance min-[380px]:text-6xl sm:text-7xl md:text-8xl">
+       <h1 className="animate-fade-up font-serif text-5xl leading-[0.95] text-ivory text-balance min-[380px]:text-6xl sm:text-7xl md:text-7xl lg:text-8xl">
           {couple.partnerOne}
           <span className="mx-3 italic text-gilt sm:mx-5">&amp;</span>
           {couple.partnerTwo}
