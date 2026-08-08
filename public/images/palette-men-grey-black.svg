@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" role="img" aria-labelledby="title desc">
+  <title id="title">Black and grey colour palette</title>
+  <desc id="desc">Five horizontal shades: black, charcoal, dark grey, medium grey, and light grey.</desc>
+  <rect width="700" height="500" fill="#ffffff"/>
+  <rect x="55" y="35" width="590" height="70" rx="35" fill="#050505"/>
+  <rect x="55" y="125" width="590" height="70" rx="35" fill="#414141"/>
+  <rect x="55" y="215" width="590" height="70" rx="35" fill="#858585"/>
+  <rect x="55" y="305" width="590" height="70" rx="35" fill="#b4b4b4"/>
+  <rect x="55" y="395" width="590" height="70" rx="35" fill="#d5d5d5"/>
+</svg>
