@@ -8,65 +8,36 @@ export default function Schedule() {
       <div className="mx-auto max-w-4xl px-6 sm:px-10">
         <RevealOnScroll>
           <SectionHeading
-            eyebrow="Order of Events"
-            title="How the day unfolds"
+            eyebrow="Our Day"
+            title="Order of Events"
             tone="light"
-            description="A gentle guide through the ceremony, luncheon, photography and evening celebration."
+            description="A simple guide to the day's celebrations."
           />
         </RevealOnScroll>
 
-        <ol className="mt-16 flex flex-col">
+        <ol className="relative mt-16 before:absolute before:bottom-7 before:left-[4.55rem] before:top-7 before:w-px before:bg-mint/30 sm:before:left-[6.55rem]">
           {schedule.map((item, index) => (
-            <RevealOnScroll key={`${item.time}-${item.title}`} delayMs={index * 70}>
-              <li
-                className={`group relative flex gap-6 border-t py-7 first:border-t-0 sm:gap-10 ${
-                  item.highlighted
-                    ? "my-2 rounded-2xl border border-mint/45 bg-ivory/10 px-5 shadow-lg shadow-ink/15 first:border-t sm:px-7"
-                    : "border-ivory/15"
-                }`}
-              >
-                <div className="flex w-20 shrink-0 flex-col items-start sm:w-28">
-                  <span
-                    className={`font-serif text-2xl sm:text-3xl ${
-                      item.highlighted ? "font-bold text-gilt" : "text-mint"
-                    }`}
-                  >
+            <RevealOnScroll key={`${item.time}-${item.title}`} delayMs={index * 65}>
+              <li className="relative flex gap-6 border-t border-ivory/15 py-7 first:border-t-0 sm:gap-10">
+                <div className="w-20 shrink-0 sm:w-28">
+                  <span className="font-serif text-2xl text-gilt tabular-nums sm:text-3xl">
                     {item.time}
                   </span>
                 </div>
-                <div className="relative flex flex-1 flex-col gap-1 pb-1">
-                  <span
-                    className={`absolute -left-[calc(1.5rem+5px)] top-2 hidden rounded-full bg-mint sm:-left-[calc(2.5rem+5px)] sm:block ${
-                      item.highlighted ? "h-3.5 w-3.5 ring-4 ring-mint/20" : "h-2.5 w-2.5"
-                    }`}
-                  />
-                  <h3
-                    className={`font-serif text-xl text-ivory sm:text-2xl ${
-                      item.highlighted ? "font-bold" : ""
-                    }`}
-                  >
-                    {item.title}
-                  </h3>
-                  {item.description && (
-                    <p className="text-sm text-fog/80 sm:text-base">
-                      {item.description}
-                    </p>
-                  )}
-                  {item.details && (
-                    <ul className="mt-4 grid gap-2 text-sm text-fog/75 sm:grid-cols-2">
-                      {item.details.map((detail) => (
-                        <li key={detail} className="flex gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-mint/80" />
-                          <span>{detail}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                <span className="absolute left-[4.25rem] top-9 h-2.5 w-2.5 rounded-full bg-mint ring-4 ring-evergreen sm:left-[6.25rem]" />
+                <div className="flex flex-1 items-center">
+                  <h3 className="font-serif text-xl text-ivory sm:text-2xl">{item.title}</h3>
                 </div>
               </li>
             </RevealOnScroll>
           ))}
         </ol>
+
+        <RevealOnScroll delayMs={180}>
+          <p className="mt-8 text-center text-xs italic leading-relaxed text-fog/65">
+            Times are provided as a guide and may be subject to minor adjustments.
+          </p>
+        </RevealOnScroll>
       </div>
     </section>
   );

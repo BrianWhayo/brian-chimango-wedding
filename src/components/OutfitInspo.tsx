@@ -17,7 +17,7 @@ function PaletteCard({
   swatches: { label: string; color: string }[];
 }) {
   const lightTone =
-    audience === "For men"
+    audience === "Gentlemen"
       ? swatches[swatches.length - 1].color
       : swatches[0].color;
   const deepTone =
@@ -155,9 +155,9 @@ export default function OutfitInspo() {
       <div className="mx-auto max-w-6xl px-6 sm:px-10">
         <RevealOnScroll>
           <SectionHeading
-            eyebrow="Outfit Inspiration"
+            eyebrow="Dress Inspiration"
             title="What to wear"
-            description="For men, grey tones. For ladies, sage green finished with gold accessories."
+            description="We invite you to celebrate with us by dressing in the colours below."
           />
         </RevealOnScroll>
 
@@ -184,6 +184,12 @@ export default function OutfitInspo() {
             </RevealOnScroll>
           ))}
         </div>
+
+        <RevealOnScroll delayMs={140}>
+          <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-graphite">
+            Thank you for helping us create a beautiful and elegant celebration.
+          </p>
+        </RevealOnScroll>
       </div>
     </section>
   );

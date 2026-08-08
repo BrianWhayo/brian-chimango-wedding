@@ -18,8 +18,8 @@ export default function Gallery() {
         <RevealOnScroll>
           <SectionHeading
             eyebrow="Gallery"
-            title="Moments so far"
-            description="A few frames from the story that brought us here, including family memories in timeless black and white."
+            title="Our Journey in Pictures"
+            description="A few cherished moments from our journey together."
           />
         </RevealOnScroll>
 
@@ -73,7 +73,7 @@ export default function Gallery() {
               />
             </div>
             <blockquote className="font-serif text-xl italic leading-snug text-ink sm:text-2xl">
-              &ldquo;Every love story is beautiful, but ours is my favourite.&rdquo;
+              &ldquo;A few cherished moments from our journey together.&rdquo;
             </blockquote>
           </figure>
         </RevealOnScroll>
@@ -84,15 +84,14 @@ export default function Gallery() {
               <div className="flex flex-col gap-3 border-t border-mist pt-8 sm:flex-row sm:items-end sm:justify-between">
                 <div>
                   <p className="text-xs uppercase tracking-[0.35em] text-moss">
-                    Family Album
+                    Cherished Memories
                   </p>
                   <h3 className="mt-3 font-serif text-3xl text-ink sm:text-4xl">
-                    Their journey in black and white
+                    Moments we treasure
                   </h3>
                 </div>
                 <p className="max-w-md text-sm leading-relaxed text-graphite">
-                  These added memories are presented in monochrome so they sit
-                  beautifully with the existing wedding theme.
+                  Simple moments, beautifully remembered.
                 </p>
               </div>
             </RevealOnScroll>
@@ -131,14 +130,13 @@ export default function Gallery() {
           <RevealOnScroll className="relative">
             <div className="flex max-w-3xl flex-col gap-4">
               <p className="text-xs uppercase tracking-[0.35em] text-mint">
-                Family Milestones
+                Love, Faith & Family
               </p>
               <h3 className="font-serif text-4xl leading-tight text-ivory sm:text-5xl">
-                The life and love they built
+                At the heart of it all
               </h3>
               <p className="max-w-2xl text-sm leading-relaxed text-fog/85 sm:text-base">
-                Through celebrations, achievements and everyday joys, family
-                remains at the centre of their story.
+                The people and moments that mean the most to us.
               </p>
             </div>
           </RevealOnScroll>

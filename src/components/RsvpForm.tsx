@@ -128,8 +128,7 @@ export default function RsvpForm() {
           Thank you for your RSVP
         </h3>
         <p className="max-w-sm text-graphite">
-          We&apos;ve received your response and can&apos;t wait to celebrate
-          with you. A confirmation will follow shortly.
+          We&apos;ve received your response. Thank you for helping us prepare for our special day.
         </p>
         <button
           type="button"
@@ -255,7 +254,7 @@ export default function RsvpForm() {
           value={form.message}
           onChange={(e) => update("message", e.target.value)}
           className={inputClass(false)}
-          placeholder="Dietary requirements, well-wishes, or anything else you'd like us to know."
+          placeholder="Dietary requirements or anything else you'd like us to know."
         />
       </Field>
 

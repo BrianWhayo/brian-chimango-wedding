@@ -91,13 +91,13 @@ export default function BestWishesForm({ embedded = false }: BestWishesFormProps
     >
       <div className="flex flex-col gap-3">
         <span className="text-xs uppercase tracking-[0.3em] text-mint">
-          Send love
+          Leave Us Your Wishes
         </span>
         <h3 className="font-serif text-3xl leading-tight text-ivory">
-          Best wishes
+          Leave Us a Message
         </h3>
         <p className="text-sm leading-relaxed text-fog/85">
-          Leave Brian and Chimango a note for their wedding day.
+          Your kind words, prayers and well wishes mean so much to us.
         </p>
       </div>
 
@@ -127,14 +127,14 @@ export default function BestWishesForm({ embedded = false }: BestWishesFormProps
           aria-invalid={Boolean(errors.message)}
           aria-describedby={errors.message ? "wish-message-error" : undefined}
           className={inputClass(Boolean(errors.message))}
-          placeholder="Wishing you a lifetime of love and joy."
+          placeholder="Write your message, prayer or well wish here."
           required
         />
       </Field>
 
       {status === "success" && (
         <p role="status" className="rounded-xl border border-mint/30 bg-mint/10 px-4 py-3 text-sm text-mint">
-          Your wedding wish has been sent.
+          Thank you. Your message has been sent.
         </p>
       )}
 

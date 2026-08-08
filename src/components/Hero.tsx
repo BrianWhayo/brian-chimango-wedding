@@ -1,11 +1,17 @@
 import Image from "next/image";
-import { couple, heroMessage, weddingDate } from "@/lib/wedding-data";
+import {
+  couple,
+  heroMessage,
+  heroVerse,
+  weddingDate,
+  weddingTheme,
+} from "@/lib/wedding-data";
 
 export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-end overflow-hidden bg-ink"
+      className="relative flex min-h-[100svh] items-center overflow-hidden bg-ink"
     >
       <Image
         src="/images/couple-doorway-full.jpg"
@@ -13,47 +19,53 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[65%_15%] opacity-90"
+        className="object-cover object-[62%_center] opacity-90 sm:object-[64%_center]"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/55 to-ink/10" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/15" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/20" />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-8 px-6 pb-20 pt-40 sm:px-10 sm:pb-28">
-        <p className="animate-fade-in text-xs uppercase tracking-[0.5em] text-mint">
-          We&apos;re getting married
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-5 px-6 pb-16 pt-28 sm:gap-7 sm:px-10 sm:pb-24 sm:pt-32">
+        <p className="animate-fade-in text-xs uppercase tracking-[0.45em] text-mint">
+          Together Before God
         </p>
 
-        <h1 className="animate-fade-up font-serif text-6xl leading-[0.95] text-ivory text-balance sm:text-8xl md:text-9xl">
+        <h1 className="animate-fade-up font-serif text-5xl leading-[0.95] text-ivory text-balance min-[380px]:text-6xl sm:text-8xl md:text-9xl">
           {couple.partnerOne}
           <span className="mx-3 italic text-gilt sm:mx-5">&amp;</span>
           {couple.partnerTwo}
         </h1>
 
         <div
-          className="animate-fade-up flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between"
-          style={{ animationDelay: "200ms" }}
+          className="animate-fade-up flex max-w-3xl flex-col gap-5"
+          style={{ animationDelay: "160ms" }}
         >
-          <div className="flex flex-col gap-3">
-            <span className="ornament text-sm uppercase tracking-[0.35em] text-fog">
-              {weddingDate.display}
-            </span>
-            <p className="max-w-xl text-base leading-relaxed text-fog/90 sm:text-lg">
-              {heroMessage}
-            </p>
-          </div>
-
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="#rsvp"
-              className="rounded-full bg-evergreen px-8 py-3.5 text-xs uppercase tracking-[0.25em] text-ivory transition-colors hover:bg-moss"
-            >
-              RSVP
-            </a>
+          <p className="text-xs uppercase tracking-[0.24em] text-fog sm:text-sm sm:tracking-[0.28em]">
+            {weddingDate.dayOfWeek}, {weddingDate.display}
+          </p>
+          <p className="font-serif text-xl italic text-gilt sm:text-2xl">
+            {weddingTheme}
+          </p>
+          <blockquote className="max-w-2xl border-l border-gilt/70 pl-4 text-[13px] leading-relaxed text-fog/90 sm:pl-5 sm:text-base">
+            <span className="italic">&ldquo;{heroVerse.text}&rdquo;</span>
+            <cite className="mt-2 block not-italic text-xs uppercase tracking-[0.22em] text-mint">
+              {heroVerse.reference}
+            </cite>
+          </blockquote>
+          <p className="max-w-2xl text-sm leading-relaxed text-fog/90 sm:text-lg">
+            {heroMessage}
+          </p>
+          <div className="flex flex-wrap gap-4 pt-2">
             <a
               href="#details"
-              className="rounded-full border border-ivory/70 px-8 py-3.5 text-xs uppercase tracking-[0.25em] text-ivory transition-colors hover:bg-ivory hover:text-evergreen"
+              className="rounded-full bg-evergreen px-6 py-3 text-[10px] uppercase tracking-[0.22em] text-ivory transition-colors hover:bg-moss sm:px-8 sm:py-3.5 sm:text-xs sm:tracking-[0.25em]"
             >
-              Our Day
+              View Wedding Details
+            </a>
+            <a
+              href="#rsvp"
+              className="rounded-full border border-ivory/70 px-6 py-3 text-[10px] uppercase tracking-[0.22em] text-ivory transition-colors hover:bg-ivory hover:text-evergreen sm:px-8 sm:py-3.5 sm:text-xs sm:tracking-[0.25em]"
+            >
+              RSVP
             </a>
           </div>
         </div>

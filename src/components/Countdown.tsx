@@ -71,7 +71,6 @@ export default function Countdown() {
           <div
             className="grid grid-cols-2 gap-4 sm:flex sm:gap-8"
             role="timer"
-            aria-live="polite"
             aria-label={`${timeLeft.days} days, ${timeLeft.hours} hours, ${timeLeft.minutes} minutes and ${timeLeft.seconds} seconds until the wedding`}
           >
             <Unit value={timeLeft.days} label="Days" />

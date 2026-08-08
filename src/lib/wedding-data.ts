@@ -7,86 +7,89 @@ export const couple = {
   hashtag: "#Brian&Chimango2026",
 };
 
-export const heroMessage =
-  "With hearts overflowing with gratitude and love, we warmly invite you to celebrate one of the most meaningful moments of our lives, as we continue our forever together as husband and wife. Join us for an evening filled with love, laughter, joy, and cherished memories.";
+export const weddingTheme = "Celebrating God's Faithfulness, Love & Family";
 
-export const familyStory = {
-  courtMarriageDate: "16 February 2013",
-  children: "3 boys",
-  paragraphs: [
-    "Over the past 13 wonderful years, we have built a life together, strengthened by love, faith, and the joy of raising our three amazing children. Every moment has deepened our bond and prepared us for this beautiful day.",
-    "With greatful hearts, we invite you to join us as we exchange our marriage vows, surrounded by our beloved families, firmly united in holy matrimony before our beloved Lord Jesus Christ.",
-    "Your presence, love, and prayers will make our celebration even meaningful, and we would truly be honoured to share this special day with you.",
-  ],
+export const heroVerse = {
+  text: "For everything there is a season, and a time for every purpose under heaven.",
+  reference: "Ecclesiastes 3:1",
 };
 
+export const footerVerse = {
+  text: "Though one may be overpowered, two can defend themselves. A cord of three strands is not quickly broken.",
+  reference: "Ecclesiastes 4:12",
+};
+
+export const heroMessage =
+  "We joyfully invite you to celebrate our wedding as we exchange our marriage vows before God. Your love, prayers and presence would mean so much to us as we begin this new chapter together.";
+
 export const weddingDate = {
-  // ISO 8601, used by the countdown — keep in sync with the display date below
-  iso: "2026-08-26T13:00:00+02:00",
+  // ISO 8601, used by the countdown — keep in sync with the display date below.
+  iso: "2026-08-26T12:00:00+02:00",
   display: "26 August 2026",
   dayOfWeek: "Wednesday",
+  rsvpDeadline: "Wednesday, 19 August 2026",
 };
 
 export const ceremony = {
   venueName: "Yaisk Garden",
   venueNote: "Blantyre",
-  time: "13:00",
+  guestArrival: "11:00",
+  time: "12:00",
   mapUrl: "https://maps.app.goo.gl/s2HFUVEmNsVAAF226",
 };
 
 export const reception = {
   venueName: "Amaryllis Hotel",
-  venueNote: "Reception & celebration",
+  venueNote: "Blantyre",
   time: "18:00",
-  // Placeholder — replace with a real Google Maps link when available
   mapUrl: "https://maps.google.com/?q=Amaryllis+Hotel+Blantyre",
 };
 
 export type ScheduleItem = {
   time: string;
   title: string;
-  description?: string;
-  details?: string[];
-  highlighted?: boolean;
 };
 
 export const schedule: ScheduleItem[] = [
-  { time: "12:30", title: "Guests Arrive", description: "Guests arrive and take their seats" },
+  { time: "11:00", title: "Guest Arrival" },
+  { time: "12:00", title: "Wedding Ceremony" },
+  { time: "13:30", title: "Luncheon" },
+  { time: "14:30", title: "Photography" },
+  { time: "17:00", title: "Refresh & Travel" },
+  { time: "18:00", title: "Reception" },
+  { time: "20:00", title: "Cake & Toasts" },
+  { time: "21:00", title: "Celebration Continues" },
+];
+
+export const faqs = [
   {
-    time: "13:00",
-    title: "Bridal Party Arrival",
-    description: "Arrival of the bridal party and processional",
-    highlighted: true,
+    question: "Can I bring a guest?",
+    answer: "Please refer to your invitation for guest details.",
   },
-  { time: "13:05", title: "Opening Prayer" },
-  { time: "13:10", title: "Welcome Address" },
-  { time: "13:15", title: "Praise & Worship / Hymn" },
-  { time: "13:20", title: "Scripture Reading" },
   {
-    time: "13:30 - 14:15",
-    title: "Wedding Officiation",
-    description: "The formal marriage ceremony",
-    details: [
-      "Exchange of marriage vows",
-      "Exchange of rings",
-      "Pronouncement of marriage",
-      "Signing of the marriage register",
-      "Final blessing",
-    ],
+    question: "Are children welcome?",
+    answer:
+      "Children are warmly welcome at the ceremony and luncheon. The evening reception will be an adults-only celebration.",
   },
-  { time: "14:15", title: "Presentation of the Newlyweds" },
-  { time: "14:20", title: "Recessional & Congratulations" },
-  { time: "14:30", title: "Luncheon", highlighted: true },
-  { time: "15:30", title: "Photography Session", description: "Portraits with the newlyweds" },
-  { time: "17:00", title: "Travel & Freshen Up", description: "Preparation for the reception" },
   {
-    time: "18:00",
-    title: "Dinner & Celebration",
-    description: "Speeches and dinner service",
-    highlighted: true,
+    question: "What time should I arrive?",
+    answer:
+      "Please arrive by 11:00 to allow sufficient time to be seated before the ceremony begins.",
   },
-  { time: "20:00", title: "Toasts & Cake Cutting", description: "Raise a glass to the newlyweds" },
-  { time: "21:00", title: "Closing & After Celebration", description: "Dancing into the evening" },
+  {
+    question: "Is parking available?",
+    answer: "Parking will be available at both venues.",
+  },
+  {
+    question: "Who can I contact?",
+    answer:
+      "Please contact our RSVP coordinators should you require any assistance before the wedding.",
+  },
+  {
+    question: "What if I cannot attend?",
+    answer:
+      "Kindly let us know by Wednesday, 19 August 2026 so we can finalise our arrangements.",
+  },
 ];
 
 export type RsvpContact = {
@@ -102,8 +105,6 @@ export const rsvpContacts: RsvpContact[] = [
 export type OutfitInspoItem = {
   label: string;
   note?: string;
-  // Leave empty until real inspiration photos are supplied — the card
-  // renders an elegant placeholder automatically when image is undefined
   image?: string;
 };
 
@@ -117,9 +118,9 @@ export type OutfitPalette = {
 
 export const outfitPalettes: OutfitPalette[] = [
   {
-    audience: "For men",
-    title: "Grey colour palette",
-    description: "Classic tailoring in black and refined grey tones.",
+    audience: "Gentlemen",
+    title: "Grey tones",
+    description: "Grey suit, white shirt, optional grey tie and black shoes.",
     image: "/images/palette-men-grey-black.svg",
     swatches: [
       { label: "Black", color: "#050505" },
@@ -130,9 +131,9 @@ export const outfitPalettes: OutfitPalette[] = [
     ],
   },
   {
-    audience: "For ladies",
-    title: "Sage green with gold accessories",
-    description: "Soft sage and evergreen outfits finished with warm gold accents.",
+    audience: "Ladies",
+    title: "Sage green & gold",
+    description: "Sage green attire with gold accessories and gold or nude heels.",
     image: "/images/palette-ladies-sage.jpeg",
     swatches: [
       { label: "Sage Hint", color: "#bfcfbb" },
@@ -144,8 +145,6 @@ export const outfitPalettes: OutfitPalette[] = [
   },
 ];
 
-// Replace/extend this list once male outfit inspo images are supplied.
-// Each item becomes one card in the Outfit Inspiration grid.
 export const outfitInspo: OutfitInspoItem[] = [
   {
     label: "Gentlemen: Suit",
@@ -194,12 +193,12 @@ export const gallery = {
     {
       src: "/images/family/family-formal-day.jpeg",
       alt: "Brian and Chimango dressed formally with two of their sons",
-      caption: "The family at the heart of it all",
+      caption: "Family at the heart of it all",
     },
     {
       src: "/images/family/family-graduation.jpeg",
       alt: "Brian and Chimango celebrating a graduation with their three sons",
-      caption: "The 2 of us who have become 5",
+      caption: "The two of us who became five",
     },
   ],
   images: [
@@ -211,12 +210,12 @@ export const gallery = {
     {
       src: "/images/couple-reception-portrait.jpg",
       alt: "Brian and Chimango seated at a candlelit reception table",
-      caption: "A partnership built over time",
+      caption: "Cherished moments",
     },
     {
       src: "/images/couple-doorway-close.jpg",
       alt: "Close portrait of Brian and Chimango at the doorway",
-      caption: "Favourite memories",
+      caption: "Our journey together",
     },
     {
       src: "/images/new pictures/WhatsApp Image 2026-07-15 at 14.09.24.jpeg",
