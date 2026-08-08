@@ -24,12 +24,12 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/15" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/20" />
 
-      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-3xl flex-col items-center gap-4 px-6 pb-10 pt-32 text-center sm:gap-5 sm:px-10 sm:pb-12 md:pb-14">
+      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-md flex-col items-center gap-2 px-4 pb-6 pt-24 text-center sm:max-w-3xl sm:gap-5 sm:px-10 sm:pb-12 sm:pt-32 md:pb-14">
         <p className="animate-fade-in text-xs uppercase tracking-[0.45em] text-mint">
           Together Before God
         </p>
 
-       <h1 className="animate-fade-up font-serif text-5xl leading-[0.95] text-ivory text-balance min-[380px]:text-6xl sm:text-7xl md:text-7xl lg:text-8xl">
+       <h1 className="animate-fade-up font-serif text-4xl leading-[0.95] text-ivory text-balance min-[380px]:text-5xl sm:text-7xl md:text-7xl lg:text-8xl">
           {couple.partnerOne}
           <span className="mx-3 italic text-gilt sm:mx-5">&amp;</span>
           {couple.partnerTwo}
@@ -45,13 +45,13 @@ export default function Hero() {
           <p className="font-serif text-xl italic text-gilt sm:text-2xl">
             {weddingTheme}
           </p>
-          <blockquote className="max-w-2xl border-l border-gilt/70 pl-4 text-[13px] leading-relaxed text-fog/90 sm:pl-5 sm:text-base">
+         <blockquote className="max-w-xl border-l border-gilt/70 pl-3 text-[11px] leading-relaxed text-fog/90 sm:pl-5 sm:text-base">
             <span className="italic">&ldquo;{heroVerse.text}&rdquo;</span>
             <cite className="mt-2 block not-italic text-xs uppercase tracking-[0.22em] text-mint">
               {heroVerse.reference}
             </cite>
           </blockquote>
-          <p className="max-w-2xl text-sm leading-relaxed text-fog/90 sm:text-lg">
+         <p className="max-w-xl text-xs leading-relaxed text-fog/90 sm:text-lg">
             {heroMessage}
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
