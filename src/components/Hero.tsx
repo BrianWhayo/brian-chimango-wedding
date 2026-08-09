@@ -19,12 +19,12 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-contain object-center opacity-100 bg-ink"
+        className="object-cover object-top opacity-100 bg-ink sm:object-contain sm:object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-ink/25 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/35 via-transparent to-ink/10" />
 
-      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-md translate-y-6 flex-col items-center gap-1.5 px-4 pb-2 pt-2 text-center sm:max-w-3xl sm:translate-y-0 sm:gap-5 sm:px-10 sm:pb-12 sm:pt-16 md:pb-14">
+      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-md translate-y-0 flex-col items-center gap-1.5 px-4 pb-8 pt-2 text-center sm:max-w-3xl sm:translate-y-0 sm:gap-5 sm:px-10 sm:pb-12 sm:pt-16 md:pb-14">
         <p className="animate-fade-in text-xs uppercase tracking-[0.45em] text-mint">
           Together Before God
         </p>
