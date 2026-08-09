@@ -29,7 +29,7 @@ export default function Hero() {
           Together Before God
         </p>
 
-       <h1 className="animate-fade-up font-serif text-1.65rem leading-[0.95] text-ivory text-balance min-[380px]:text-1.85rem sm:text-7xl md:text-7xl lg:text-8xl">
+       <h1 className="animate-fade-up font-serif text-[1.9rem] leading-[0.95] text-ivory text-balance min-[380px]:text-[2rem] sm:text-7xl md:text-7xl lg:text-8xl">
           {couple.partnerOne}
           <span className="mx-3 italic text-gilt sm:mx-5">&amp;</span>
           {couple.partnerTwo}
