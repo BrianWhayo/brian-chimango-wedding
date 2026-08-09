@@ -19,17 +19,17 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-contain object-center opacity-90 bg-ink"
+        className="object-contain object-center opacity-100 bg-ink"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/60 to-ink/15" />
-      <div className="absolute inset-0 bg-gradient-to-r from-ink/70 via-transparent to-ink/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-ink/25 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink/35 via-transparent to-ink/10" />
 
-      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-md flex-col items-center gap-2 px-4 pb-6 pt-24 text-center sm:max-w-3xl sm:gap-5 sm:px-10 sm:pb-12 sm:pt-32 md:pb-14">
+      <div className="relative z-10 mx-auto mt-auto flex w-full max-w-md flex-col items-center gap-1.5 px-4 pb-6 pt-2 text-center sm:max-w-3xl sm:gap-5 sm:px-10 sm:pb-12 sm:pt-16 md:pb-14">
         <p className="animate-fade-in text-xs uppercase tracking-[0.45em] text-mint">
           Together Before God
         </p>
 
-       <h1 className="animate-fade-up font-serif text-4xl leading-[0.95] text-ivory text-balance min-[380px]:text-5xl sm:text-7xl md:text-7xl lg:text-8xl">
+       <h1 className="animate-fade-up font-serif text-3xl leading-[0.95] text-ivory text-balance min-[380px]:text-4xl sm:text-7xl md:text-7xl lg:text-8xl">
           {couple.partnerOne}
           <span className="mx-3 italic text-gilt sm:mx-5">&amp;</span>
           {couple.partnerTwo}
