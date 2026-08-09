@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-end justify-center overflow-hidden bg-ink"
+      className="relative flex min-h-[78svh] items-end justify-center overflow-hidden bg-ink sm:min-h-[100svh]"
     >
       <Image
         src="/images/couple-hero-new.png"
