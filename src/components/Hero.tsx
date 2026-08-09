@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] items-end justify-center overflow-hidden bg-ink"
+      className="relative flex min-h-[100svh] items-end justify-center overflow-hidden bg-ink bg-[url('/images/couple-hero-new.png')] bg-cover bg-center sm:bg-none"
     >
       <Image
         src="/images/couple-hero-new.png"
@@ -19,7 +19,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover object-[50%_28%] opacity-100 bg-ink sm:object-contain sm:object-center"
+        className="object-contain object-center opacity-100 sm:object-contain sm:object-center"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/65 via-ink/25 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-r from-ink/35 via-transparent to-ink/10" />
