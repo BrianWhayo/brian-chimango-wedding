@@ -74,11 +74,8 @@ export default function WeddingDetails() {
         </div>
 
         <RevealOnScroll delayMs={180}>
-          <div className="mt-6 grid gap-4 rounded-3xl border border-mist/70 bg-sage-hint/65 p-6 sm:grid-cols-2 sm:p-8">
-            <div>
-              <span className="text-[10px] uppercase tracking-[0.28em] text-moss">Dress Code</span>
-              <p className="mt-2 font-serif text-2xl text-ink">Grey • Sage Green • Gold</p>
-            </div>
+          <div className="mt-6 grid gap-4 rounded-3xl border border-mist/70 bg-sage-hint/65 p-6 sm:grid-cols-1 sm:p-8">
+          
             <div>
               <span className="text-[10px] uppercase tracking-[0.28em] text-moss">RSVP By</span>
               <p className="mt-2 font-serif text-2xl text-ink">{weddingDate.rsvpDeadline}</p>
